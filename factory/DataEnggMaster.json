@@ -1,0 +1,15 @@
+{
+	"name": "DataEnggMaster",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9840c7aa-32af-4821-ad9d-0d76bb0d0372",
+		"tenantId": "dd8f8ded-c0a9-439f-897a-71e321dc77e4"
+	}
+}
