@@ -39,8 +39,6 @@
 			{
 				"name": "Filteritem",
 				"type": "Filter",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "GetMetadatafolder",
@@ -52,11 +50,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('GetMetadatafolder').output.childItems",
+						"value": "@activity('GetMetadatafolder').output.structure",
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@contains(item().name,'csv')",
+						"value": "@contains(item().name,'category_name')",
 						"type": "Expression"
 					}
 				}
