@@ -22,9 +22,9 @@
 					"fieldList": [
 						"itemName",
 						"itemType",
-						"childItems",
 						"lastModified",
-						"exists"
+						"exists",
+						"structure"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
@@ -39,6 +39,8 @@
 			{
 				"name": "Filteritem",
 				"type": "Filter",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "GetMetadatafolder",
